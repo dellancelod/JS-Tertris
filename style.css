@@ -1,0 +1,99 @@
+body{
+    margin: 0;
+}
+h3{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+.rules{
+    width:auto;
+    margin-left: 40px;
+    margin-right: 40px;
+    hyphens: auto;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 8%;
+}
+#sidebar{
+    width: 80px;
+    margin-left: 100px;
+    margin-right: auto;
+}
+#start-button {
+    background-color: #d35252; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.container{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background-image: -moz-linear-gradient(75deg, #FF7088 15%, #F2B69D 55%);
+}
+
+.game{
+    display: flex;
+    position: relative;
+    top: 10%;
+}
+
+.grid {
+    width: 216px;
+    height: 432px;
+    display: flex;
+    margin-left: auto;
+    flex-wrap: wrap;
+    border-width: 1px;
+    border-color: #FFFF;
+    border-style: solid;
+}
+
+.grid div {
+    width: 20px;
+    height: 20px;
+    border-width: 1px;
+    border-color: #FFFF;
+    border-style: solid;
+}
+
+.grid div[class="taken"] {
+    width: 20px;
+    height: 20px;
+    border: 1px solid transparent;
+}
+.tetromino{
+    background-color: blue;
+}
+
+.mini-grid{
+    width: 80px;
+    height: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mini-grid div {
+    width: 20px;
+    height: 20px;
+}
+
+.sidebar-elements{
+    display: grid;
+    justify-content: center;
+}
+
+.slidecontainer {
+    width: 100%; /* Width of the outside container */
+}
+
+#speed-slider{
+  direction: rtl
+}
+  
