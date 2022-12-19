@@ -1,5 +1,7 @@
 body{
     margin: 0;
+    height: 100%;
+    position: absolute;
 }
 h3{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -34,6 +36,7 @@ h3{
     width: 100%;
     position: relative;
     background-image: -moz-linear-gradient(75deg, #FF7088 15%, #F2B69D 55%);
+    background-image: -webkit-linear-gradient(75deg, #FF7088 15%, #F2B69D 55%); 
 }
 
 .game{
@@ -44,7 +47,7 @@ h3{
 
 .grid {
     width: 216px;
-    height: 432px;
+    height: 400px;
     display: flex;
     margin-left: auto;
     flex-wrap: wrap;
@@ -56,9 +59,9 @@ h3{
 .grid div {
     width: 20px;
     height: 20px;
-    border-width: 1px;
+    /*border-width: 1px;*/
     border-color: #FFFF;
-    border-style: solid;
+    /*border-style: solid;*/
 }
 
 .grid div[class="taken"] {
