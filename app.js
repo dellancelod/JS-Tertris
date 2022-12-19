@@ -30,7 +30,6 @@ document.addEventListener('DOMContentLoaded', ()=>{
     Гравець отримує очки за кожен заповнений ряд, тому ваше завдання - заповнювати ряди, 
     не заповнюючи саму склянку (по вертикалі) якомога довше, щоб таким чином отримати якомога більше очок.`
 
-    document.getElementById('soundtrack').play()
 
     //The tetraminoes
     const lTetromino = [
@@ -231,6 +230,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
     }
 
     startButton.addEventListener('click', () => {
+        document.getElementById('soundtrack').play()
         if(timerId){
             clearInterval(timerId)
             timerId = null
